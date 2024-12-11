@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Pages Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home" onclick="toggleVisibility('home')">Home</a>
+        <a href="#about" onclick="toggleVisibility('about')">About</a>
+        <a href="#contact" onclick="toggleVisibility('contact')">Contact</a>
+    </nav>
+
+    <div id="home" class="container">
+        <h2>Home Section</h2>
+        <p>This is the home section of the site. You can add more content here.</p>
+    </div>
+
+    <div id="about" class="container" style="display:none;">
+        <h2>About Section</h2>
+        <p>This is the about section. You can add more content about your site here.</p>
+    </div>
+
+    <div id="contact" class="container" style="display:none;">
+        <h2>Contact Section</h2>
+        <p>This is the contact section. Add your contact information here.</p>
+    </div>
+
+    <button onclick="showAlert()">Click Me</button>
+
+    <footer>
+        <p>&copy; 2024 My GitHub Pages Website</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
